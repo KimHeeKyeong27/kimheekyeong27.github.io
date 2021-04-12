@@ -3,57 +3,98 @@
 <head>
 <title> 경영/디지털인문예술/김희경</title>
 <meta charset="utf-8">
-<style>
-#grid{
-display: grid;
-grid-template-columns: 150px 1fr;
+<Style>
+a {
+  color: purple;
+  text-decoration: none;
 }
-a{
-  color:purple;
-  text-decoration:none;
+
+header {
+  width: 100%;
+  height: 100px;
+  background: #7986d0;
 }
-.saw{
-  color:green
+
+header ul {
+  list-style: none;
+  padding-top: 35px;
 }
-h1{
-  font-size:45px;
-  text-align:center;
-  border-bottom:1px;
-  margin:0;
-  padding:40px
+
+header ul li {
+  float: left;
+  margin-right: 40px;
 }
-ul{border-right:5px solid purple;
-  width:100px;
-  padding-left:50px;
+
+header ul li a {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
-#grid ol{
-  padding-right:50px;
+.orange {
+  font-size: 20px;
+  color: orange;
+  font-weight: bold;
 }
-#article{
-  padding-left:25px;
+
+body {
+  background-color: #a3d4d2;
+  font-family: 'Nanum Gothic', sans-serif;
 }
-body{
-  background-color: #E6E6FA
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  color: black;
+  padding: 30px;
 }
-@media(max-width:800px){
-  #grid{
-  display: block;
+
+h3 {
+  margin-bottom: 30px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+.c {
+  color: #ec5312;
+}
+
+.button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#grid ul {
+  margin-top: 20px;
+  border-right: gray solid 3px;
+  padding-right: 0px;
+  padding-left: 28px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+#article {
+  padding-left: 25px;
+}
+
+@media (max-width: 500px) {
+  #grid {
+    display: block;
   }
+  #grid ul {
+    border-right: none;
 }
+
 </style>
 </head>
 <body>
- <h1 style="background-color:#9370DB"> 경영& 디지털인문예술 </h1>
- <img src="study.jpg" width="100%">
-<div id="grid">
- <ul>
-
-      <li><a href="2.html">소개</a></li>
-      <li><a href="3.html">경영학과</a></li>
-      <li><a href="4.html">디인예(DAH)</a></li>
-      <li><a href="5.html">취미</a></li>
- </ul>
- <div id="article">
+ <h1 style="background-color:paleturquoise"> 경영& 디지털인문예술 </h1>
+ <img src="idea.jpg" width="100%">
  <ol>
   <h2> 소개 </h2>
   <a href="2.html" class="saw"> 한림대학교 20학번 김희경 </a>
@@ -64,8 +105,18 @@ body{
   <p> 수강과목: 이미지영상창작, 디지털인문예술입문 </p>
   <li><p><h3><a href="5.html" class="saw"> 취미 </a></h3></p></li>
  </ol>
- </div>
-</div>
+ <!--
+<ol>
+ <h2> 소개 </h2>
+ <a href="2.html"> 한림대학교 20학번 김희경 </a>
+ <h2 style="color:midnightblue"> Learning </h2>
+ <li><p> <a href="3.html"> 전공:경영학과 </a> </p></li>
+ <p> 수강과목: 조직행동론, 마케팅원론</p>
+ <li> <p> <a href="4.html"> 복수전공: 디지털인문예술전공(DAH) </a> </p></li>
+ <p> 수강과목: 이미지영상창작, 디지털인문예술입문 </p>
+ <li><p><h3><a href="5.html"> 취미 </a></h3></p></li>
+</ol>
+-->
 <p>
   <div id="disqus_thread"></div>
   <script>
