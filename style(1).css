@@ -1,0 +1,36 @@
+#grid{
+display: grid;
+grid-template-columns: 150px 1fr;
+}
+a{
+  color:purple;
+  text-decoration:none;
+}
+.saw{
+  color:green
+}
+h1{
+  font-size:45px;
+  text-align:center;
+  border-bottom:1px;
+  margin:0;
+  padding:40px
+}
+ul{border-right:5px solid purple;
+  width:100px;
+  padding-left:50px;
+}
+#grid ol{
+  padding-right:50px;
+}
+#article{
+  padding-left:25px;
+}
+body{
+  background-color: #E6E6FA
+}
+@media(max-width:800px){
+  #grid{
+  display: block;
+  }
+}
